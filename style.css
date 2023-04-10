@@ -8,6 +8,15 @@ body{
     overflow-x: hidden;
 }
 
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+    cursor: pointer;
+}
+
 hr{
     width: 90vw;
     margin: auto;
@@ -66,13 +75,15 @@ header{
     transition: 1s ease-in;
 }
 
-li{
+.navlinks a li{
     list-style: none;
     font-size: 1.2rem;
     margin-right: 2rem;
     color: white;
+    text-decoration: none;
 }
-li:hover{
+
+.navlinks a li:hover{
     list-style: none;
     font-size: 1.2rem;
     margin-right: 2rem;
@@ -146,10 +157,11 @@ video{
         z-index: 1000;
     }
 
-    li{
+    .navlinks a li{
         text-align: center;
         padding-top: 1rem;
         margin-left: 0rem;
+        font-size: 1.2rem;
         margin-right: 0rem;
     }
     .whitelogo{
@@ -181,7 +193,7 @@ video{
 
 div.container{
     width: 100vw;
-    height: 100vh;
+    height: auto;
     background-color: white;
 }
 
@@ -317,4 +329,21 @@ footer .copyright i{
         padding-bottom: 1rem;
     }
     
+}
+
+
+/* Contact Page */
+.contactpageimg{
+    /* background-size: cover; */
+    width: 100vw;
+    height: 100vh;
+}
+
+h2.center{
+    text-align: center;
+    margin: 0;
+    font-size: 2.5rem;
+    color: white;
+    margin-top: -50vh;
+    font-weight: 400;
 }
