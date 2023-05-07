@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
     <title>Mali Resort</title>
 </head>
@@ -30,7 +31,7 @@
         </header>
         
         <div>
-            <video src="Photos/backgroundvideo.mp4" muted autoplay loop plays-inline></video>
+            <video src="Photos/backgroundvideo.mp4" muted autoplay loop plays-inline ></video>
         </div>
         <div class="overcontent">
             <h2>Escape the City and reconnect with nature on our Agrotourism retreats</h2>
@@ -42,9 +43,47 @@
     </section>
     
     <div class="container">
-        <div class="about">
+        <div class="enlightment">
+            <h1>Enlightment</h1>
+            <p class="context">Escape to Samarth Krupa Agro Tourism Farm for a unique and unforgettable experience. Learn about sustainable farming practices, meet local producers, and relax in a picturesque environment. Acres of fruit, coconut trees, and wildlife await you. Enjoy archery, tractor rides, and refreshing swimming pools. At night, retire to cozy accommodations and savor homemade cuisine. Our warm and welcoming environment ensures an unforgettable experience for all guests. Book now for the perfect combination of relaxation, adventure, and connection with nature. Samarth Krupa Agro Tourism Farm is dedicated to providing a memorable stay for all visitors.</p>
             
         </div>
+    </div>
+    <br>
+
+    <div class="imgslider">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img class="ver" src="Photos/home slider1.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="hor" src="Photos/home slider2.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="ver" src="Photos/home slider1.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="hor" src="Photos/home slider2.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="ver" src="Photos/home slider1.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="hor" src="Photos/home slider2.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="ver" src="Photos/home slider1.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="hor" src="Photos/home slider2.jpg" alt=""></div>
+              
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <br>
+
+    <div class="accomodations">
+        <h1>Accommodations</h1>
+        <div class="house">
+            <div class="shalu">
+                <img src="Photos/shalu.jpg" alt="">
+                <h3>Shalu House</h3>
+            </div>
+            <div class="shalu">
+                <img src="Photos/yamuna.jpg" alt="">
+                <h3>Yamuna House</h3>
+            </div>
+        </div>
+        <p><a href="">View all Accomodations</a></p>
     </div>
 
     <footer>
@@ -55,7 +94,13 @@
         <div class="middlecontent">
             <div class="col1">
                 <h2>Our Story</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aspernatur delectus perferendis similique modi. Blanditiis.</p>
+                <p>
+                    SAMARTH KRUPA AGRO TOURISM offers a beautiful blend of organic
+                    farming and exceptional accommodations, providing a refreshing
+                    escape from the stress of city life. Relax in the natural breeze and
+                    enjoy quality time with your loved ones in a serene and calming
+                    environment
+                </p>
             </div>
             <div class="col1">
                 <h2>Locate Us</h2>
@@ -101,6 +146,7 @@
         </div>
     </footer>
     
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </body>
 <script src="script.js"></script>
 </html>
