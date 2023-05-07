@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Mali Resort</title>
 </head>
@@ -44,9 +45,8 @@
     
     <div class="container">
         <div class="enlightment">
-            <h1>Enlightment</h1>
-            <p class="context">Escape to Samarth Krupa Agro Tourism Farm for a unique and unforgettable experience. Learn about sustainable farming practices, meet local producers, and relax in a picturesque environment. Acres of fruit, coconut trees, and wildlife await you. Enjoy archery, tractor rides, and refreshing swimming pools. At night, retire to cozy accommodations and savor homemade cuisine. Our warm and welcoming environment ensures an unforgettable experience for all guests. Book now for the perfect combination of relaxation, adventure, and connection with nature. Samarth Krupa Agro Tourism Farm is dedicated to providing a memorable stay for all visitors.</p>
-            
+            <h1  data-aos="fade-right" data-aos-duration="500">Enlightment</h1>
+            <p class="context" data-aos="fade-up" data-aos-delay="300">Escape to Samarth Krupa Agro Tourism Farm for a unique and unforgettable experience. Learn about sustainable farming practices, meet local producers, and relax in a picturesque environment. Acres of fruit, coconut trees, and wildlife await you. Enjoy archery, tractor rides, and refreshing swimming pools. At night, retire to cozy accommodations and savor homemade cuisine. Our warm and welcoming environment ensures an unforgettable experience for all guests. Book now for the perfect combination of relaxation, adventure, and connection with nature. Samarth Krupa Agro Tourism Farm is dedicated to providing a memorable stay for all visitors.</p>
         </div>
     </div>
     <br>
@@ -62,7 +62,6 @@
               <div class="swiper-slide"><img class="hor" src="Photos/home slider2.jpg" alt=""></div>
               <div class="swiper-slide"><img class="ver" src="Photos/home slider1.jpg" alt=""></div>
               <div class="swiper-slide"><img class="hor" src="Photos/home slider2.jpg" alt=""></div>
-              
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
@@ -72,19 +71,47 @@
     <br>
 
     <div class="accomodations">
-        <h1>Accommodations</h1>
-        <div class="house">
-            <div class="shalu">
-                <img src="Photos/shalu.jpg" alt="">
-                <h3>Shalu House</h3>
+        <h1 data-aos="fade-left" data-aos-duration="500">Accommodations</h1>
+        <div class="house" data-aos-delay="2000">
+            <div class="shalu" data-aos="flip-left" data-aos-duration="1000" >
+                <img src="Photos/shalu.jpg" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                  <div class="text">Shalu House</div>
+                </div>
             </div>
-            <div class="shalu">
-                <img src="Photos/yamuna.jpg" alt="">
-                <h3>Yamuna House</h3>
+            <div class="shalu" data-aos-delay="200" data-aos-duration="1000" data-aos="flip-right">
+                <img src="Photos/yamuna.jpg" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                  <div class="text">Yamuna House</div>
+                </div>
             </div>
         </div>
-        <p><a href="">View all Accomodations</a></p>
+        <p class="link" data-aos="zoom-in" data-aos-delay="100"><a href="">View all Accomodations</a></p>
     </div>
+
+
+    <h1 data-aos="fade-right" data-aos-duration="600">Experiences</h1>
+    <div class="experiences">
+        <div class="fish" data-aos="fade-right" data-aos-delay="800">
+            <img class="exp" src="Photos/Bullock-cart.jpg" alt="">
+            <div class="middle">
+                <div class="text">Bullock Cart Ride</div>
+            </div>
+        </div>
+        <div class="fish" data-aos="fade-right" data-aos-delay="1200">
+            <img class="exp" src="Photos/fishing.jpg" alt="">
+            <div class="middle">
+                <div class="text">Fishing</div>
+            </div>
+        </div>
+        <div class="fish" data-aos="fade-right" data-aos-delay="1500">
+            <img class="exp" src="Photos/archery.jpg" alt="">
+            <div class="middle">
+                <div class="text">Archery</div>
+            </div>
+        </div>
+    </div>
+    <p class="link" data-aos-delay="1700" data-aos="zoom-in"><a href="">View all Experiences</a></p>
 
     <footer>
         <div class="uppercontent">
@@ -147,6 +174,10 @@
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 <script src="script.js"></script>
 </html>

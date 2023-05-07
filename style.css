@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Comme&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Comme&family=Raleway:wght@300;400&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Comme', sans-serif;
-    
+    font-family: 'Raleway', sans-serif;
 }
+
 body{
     overflow-x: hidden;
+    background-color: #FFFBEB;
 }
 
 a{
@@ -30,10 +30,10 @@ h2{
     font-size: 2rem;
 }
 
-p{
+footer p{
     margin-top: 1rem;
     font-size: 1.1rem;
-    text-align: justify;
+    text-align: left;
 }
 
 .showcase{
@@ -217,6 +217,7 @@ footer{
     height: auto;
     color: rgb(63, 63, 63);
     padding-top: 2rem;
+    margin-top: 2rem;
 
 }
 
@@ -325,16 +326,19 @@ footer .copyright i{
     footer li{
         color: rgb(63, 63, 63);
         margin-top: 0rem;
-        font-size: 1.2rem;
+        font-size: 1rem;
+        text-align: left;
     }
     footer li:hover{
         /* color: rgb(255, 0, 0); */
         margin-top: 0rem;
-        font-size: 1.2rem;
+        font-size: 1rem;
         border: none;
     }
-    footer .copyright h6{
+    footer .copyright p{
         text-align: center;
+        margin: auto;
+        width: 90vw;
         font-size: 1rem;
         font-weight: 400;
         margin-top: 0.2rem;
@@ -363,13 +367,10 @@ h2.center{
 
 div.enlightment{
     padding: 3rem;
+    background-color:#FFFBEB;;
 }
 
-h1{
-    text-align: center;
-    font-size: 3rem;
-    padding-top: 1rem;
-}
+
 p.context{
     width: 70vw;
     margin: auto;
@@ -378,7 +379,16 @@ p.context{
     padding-top:1rem ;
     text-align: center;
 }
-
+@media (max-width:768px) {
+    p.context{
+        font-size: 0.9rem;
+        width: 85vw;
+    }
+    div.enlightment{
+        padding: 1.5rem;
+    }
+    
+}
 /* Image Slider */
 
 
@@ -395,7 +405,7 @@ p.context{
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    background-color: #FFFBEB;;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -432,6 +442,12 @@ p.context{
 }
 
 @media (max-width:992px) {
+    .swiper {
+        width: 100%;
+        height: 100%;
+        padding: 2rem;
+        
+    }
     .swiper-slide .ver {
         width: 250px;
         height: 400px;
@@ -450,8 +466,10 @@ p.context{
 /* .Accomodations */
 div.accomodations{
     width: 100vw;
-    padding-top: 2rem;
+    margin-left: -1rem;
     padding-bottom: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
 }
 .house{
     display: flex;
@@ -461,10 +479,69 @@ div.accomodations{
     padding-top: 1.5rem;
     justify-content: center;
     align-items: center;
+    margin-top: 1.5rem;
 }
+
+.shalu {
+    position: relative;
+    width: 34rem;
+}
+
 .shalu img{
     width: 34rem;
     margin-left: 1rem;
+    opacity: 1;
+    display: block;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+  
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+  
+.shalu:hover .image {
+    opacity: 0.5;
+}
+  
+.shalu:hover .middle {
+    opacity:1;
+    cursor: pointer;
+    
+}
+  
+.text {
+    color: black;
+    font-size: 1.7rem;
+}
+h3{
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 1rem;
+}
+p.link{
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+p.link:hover{
+    text-align: center;
+    text-decoration: underline;
+    color: purple;
+}
+h1{
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-align: center;
 }
 
 @media (max-width:992px) {
@@ -473,43 +550,75 @@ div.accomodations{
     }
     .house{
         display: flex;
-        width: 100vw;
         margin: auto;
+        width: 90vw;
         padding-top: 1.5rem;
         justify-content: center;
         align-items: center;
     }
-    .shalu img{
+    .shalu{
         width: 45vw;
-        margin-left: 1rem;
+        margin: auto;
     }
 }
 @media (max-width:768px) {
     .house{
         display: flex;
         flex-direction: column;
+        gap: 1;
         width: 100vw;
         margin: auto;
         padding-top: 1.5rem;
         justify-content: center;
         align-items: center;
     }
-    .shalu img{
+    .shalu{
         width: 80vw;
-        margin-left: 1rem;
+        margin: auto;
+    }
+    h3{
+        font-size: 1.4rem;
+        font-weight: 300;
+        text-align: center;
+        padding-top: 0rem;
+    }
+    p.link{
+        text-align: center;
+        padding-top: 1rem;
     }
 }
-h3{
-    font-size: 1.5rem;
-    font-weight: 300;
-    text-align: center;
-    padding-top: 1rem;
+
+
+/* Experiences */
+.experiences{
+    width: 100vw;
+    display: flex;
+    margin-top: 2rem;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
 }
-p{
-    text-align: center;
+.fish{
+    position: relative;
 }
-p:hover{
-    text-align: center;
-    text-decoration: underline;
-    color: purple;
+.fish .exp{
+    width: 22rem;
+    height: 18rem;
+    opacity: 1;
+    object-fit: cover;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.fish:hover .image {
+    opacity: 0.3;
+    background-color: #fff;
+}
+.fish:hover .middle {
+    opacity:1;
+    cursor: pointer;
+    
 }
