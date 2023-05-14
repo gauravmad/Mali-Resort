@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.headline {
+  display: inline-block;
+  font-size: 60px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.headline span {
+  display: inline-block;
+  animation-name: fade-in-out;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+</style>
+<body>
+    <h1 class="headline">Hello World</h1>
+
+
+</body>
+<script>
+    const headline = document.querySelector('.headline');
+headline.innerHTML = headline.textContent.replace(/\S/g, "<span>$&</span>");
+
+
+</script>
+</html>

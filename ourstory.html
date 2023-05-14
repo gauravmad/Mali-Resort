@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Mali Resort</title>
+    <title>Samarth Krupa Farm</title>
 </head>
 <body>
     
@@ -40,9 +42,51 @@
     
     <div class="container">
         <div class="about">
-            
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img class="aboutimg" src="Photos/image.png" alt=""></div>
+                  <div class="swiper-slide"><img class="aboutimg" src="Photos/image.png" alt=""></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="abouttext" data-aos="zoom-in" data-aos-duration="1000">
+            SAMARTH KRUPA AGRO TOURISM offers a beautiful blend of organic farming and exceptional accommodations, providing a refreshing escape from the stress of city life. Relax in the natural breeze and enjoy quality time with your loved ones in a serene and calming environment
+        </div>
+        <hr>
+        <div class="aboutsection" data-aos="fade-right">
+            <h1>About Us</h1>
+            <div class="about1">
+                <div data-aos="fade-right" data-aos-duration="700">
+                    At Samarth Krupa Agro Tourism Farm, we strive to offer our guests a truly unique and unforgettable experience. Whether you're interested in learning about sustainable farming practices, connecting with nature, or just relaxing and unwinding in a picturesque setting, our farm has something for everyone.
+                </div>
+                <div data-aos="zoom-in">
+                    <img class="imgabout" src="Photos/about 1 image.jpg" alt="">
+                </div>
+            </div>
+            <div class="about1">
+                <div data-aos="zoom-in">
+                    <img class="imgabout1" src="Photos/about 2.jpg" alt="">
+                </div>
+                <div data-aos="fade-left" data-aos-duration="700">
+                    Explore the beauty of our 15-acre organic farm, where you can spend as much time as you like visiting the various elements of organic farming. Meet producers on their farms, in their living environments, amid their fields, animals, buildings, and the rural landscapes. Our farm is home to acres of fruit, coconut trees, shrubs, and wildlife, providing a serene and unspoiled natural environment for anyone looking for a soothing and relaxing holiday away from the distractions of the world
+                </div>
+            </div>
+            <div class="about1">
+                <div data-aos="fade-right" data-aos-duration="700">
+                    In addition to our authentic agro-tourism experiences, we offer a range of exciting activities for guests, including archery, tractor riding, and swimming in our refreshing pools. Whether you're looking for adventure or relaxation, there's something for everyone at our farm.
+                </div>
+                <div data-aos="zoom-in">
+                    <img class="imgabout" src="Photos/about 3.jpg" alt="">
+                </div>
+            </div>
         </div>
     </div>
+
+
+
 
     <footer>
         <div class="uppercontent">
@@ -68,20 +112,20 @@
             <div class="col1">
                 <h2>Quick Links</h2>
                 <ul>
-                    <li>Home</li>
-                    <li>Our Story</li>
-                    <li>Living Space</li>
-                    <li>Experiences</li>
+                    <li><a href="#showcase">Home</a></li>
+                    <li><a href="ourstory.html">Our Story</a></li>
+                    <li><a href="livingspaces.html">Living Spaces</a></li>
+                    <li><a href="experiences.html">Experiences</a></li>
                 </ul>
             </div>
             <div class="col1">
                 <h2>Important Links</h2>
                 <ul>
                     <li>Downlaod E-Brochure</li>
-                    <li>FAQs</li>
-                    <li>Reviews</li>
-                    <li>Terms & Conditions</li>
-                    <li>Contact</li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="#reviews"></a></li>
+                    <li><a href="t&c.html">Terms & Conditions</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
         </div>
@@ -103,7 +147,36 @@
             <p>Copyright@ 2023 Samarth Krupa Farm. All Rights Reserved.</p>
         </div>
     </footer>
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 </body>
+<script>
+     var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  autoplay: {
+    delay: 1500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+//   scrollbar: {
+//     el: ".swiper-scrollbar",
+//     hide: true,
+//   },
+});
+</script>
 <script src="script.js"></script>
 </html>
