@@ -8,11 +8,12 @@
 
 body{
     overflow-x: hidden;
-    background-color: #FFFBEB;
+    background-color: #f6ffde;
 }
 
 a{
     text-decoration: none;
+    color: black;
 }
 
 li{
@@ -81,6 +82,7 @@ footer p{
 }
 
 header{
+    top: 0;
     position: absolute;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.329);
@@ -111,9 +113,24 @@ header{
 
 .hamburger.cross i:before {
     content: "\f00d"; /* Unicode for Font Awesome cross icon */
-    transition: 1s ease-in;
+    transition: 4s ease-in;
 }
+.hamburger {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .hamburger.cross {
+    transform: rotate(180deg);
+  }
+  
+  .hamburger.cross:before {
+    transform: rotate(0deg) translate(-8px, -8px);
+  }
 
+  .hamburger.cross:after {
+    transform: rotate(0deg) translate(-8px, -8px);
+  } 
+  
 .navlinks a li{
     list-style: none;
     font-size: 1.2rem;
@@ -188,17 +205,26 @@ video{
         top: 83px;
         width: 100%;
         height: 90vh;
-        padding-top: 1rem;
-        background-color: rgba(0, 0, 0, 0.619);
+        padding-top: 3rem;
+        background-color: rgba(0, 0, 0, 0.797);
         z-index: 1000;
     }
 
     .navlinks a li{
         text-align: center;
-        padding-top: 1rem;
+        padding-top: 2.5rem;
         margin-left: 0rem;
         font-size: 1.2rem;
+        font-weight: 500;
         margin-right: 0rem;
+    }
+    .navlinks a li:hover{
+        list-style: none;
+        font-size: 1.2rem;
+        margin-right: 0;
+        color: white;
+        border-bottom: none;
+        cursor: pointer;
     }
     li{
         text-align: center;
@@ -243,9 +269,9 @@ div.container{
 
 /* Footer Content */
 footer{
-    background-image: url("Photos/footer_background.jpg");
+    background-color: #f0ffcc;
+    object-fit: cover;
     background-size: cover;
-    width: 100%;
     height: auto;
     color: rgb(63, 63, 63);
     padding-top: 2rem;
@@ -271,6 +297,10 @@ footer .logo{
     position: absolute;
 }
 
+footer li a{
+    color: black;
+}
+
 footer .middlecontent{
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -280,10 +310,15 @@ footer .middlecontent{
     margin-top: 5rem;
 }
 
+footer .middlecontent p{
+    text-align: justify;
+}
+
 footer .middlecontent h2{
     font-size: 1.5rem;
     font-weight: 400;
 }
+
 footer ul{
     color: rgb(63, 63, 63);
     margin-top: 1rem;
@@ -345,6 +380,7 @@ footer .copyright i{
     footer h2{
         font-weight: 400;
         font-size: 1.4rem;
+
     }
     footer .logo{
         width: 8rem;
@@ -379,6 +415,45 @@ footer .copyright i{
         font-weight: 400;
         margin-top: 0.2rem;
         padding-bottom: 1rem;
+    }
+    
+}
+
+/* Reviews */
+/* div.reviews{
+    margin-top: 2.5rem;
+} */
+
+.swiper-pagination-bullet{
+    width: 45px;
+    height: 2px;
+    border-radius: 2px ;
+    color: #716f69;
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap,0px);
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap,0px);
+    
+}
+
+@media (max-width:992px) {
+
+    .swiper-pagination{
+        width: 40vw;
+    }
+
+    .swiper-pagination-bullet{
+        width: 45px;
+        height: 2px;
+        border-radius: 2px ;
+        color: #716f69;
+        margin: 0 var(--swiper-pagination-bullet-horizontal-gap,0px);
+    }
+    
+    .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+        margin: 0 var(--swiper-pagination-bullet-horizontal-gap,0px);
+        
     }
     
 }
@@ -441,7 +516,7 @@ p.context{
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background-color: #FFFBEB;
+    background-color: #f6ffde;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -512,6 +587,7 @@ div.accomodations{
     margin-top: 2rem;
     margin-bottom: 3rem;
 }
+
 .house{
     display: flex;
     gap: 1rem;
@@ -528,16 +604,17 @@ div.accomodations{
     width: 34rem;
 }
 
-.shalu img{
+.shalu .image{
     width: 34rem;
+    height: 24rem;
+    object-fit: cover;
     margin-left: 1rem;
     opacity: 1;
     display: block;
-    height: auto;
     transition: .5s ease;
     backface-visibility: hidden;
 }
-  
+
 .middle {
     transition: .5s ease;
     opacity: 0;
@@ -548,7 +625,7 @@ div.accomodations{
     -ms-transform: translate(-50%, -50%);
     text-align: center;
 }
-  
+
 .shalu:hover .image {
     opacity: 0.6;
 }
@@ -668,7 +745,7 @@ h1{
 
 /* About Section */
 div.container{
-    background-color: #FFFBEB;
+    background-color: #f6ffde;
 }
 div.about{
     width: 90vw;
@@ -1063,10 +1140,67 @@ div.map iframe{
     .accommodation2 img{
         text-align: start;
         width: 80vw;
+        height: 40vh;
     }
     .accommodation1 img{
         text-align: left;
         width: 80vw;
+        height: 40vh;
     }
     
 }
+
+
+/* FAQs */
+.faq{
+    width: 80vw;
+    margin: auto;
+    margin-top: 4rem;
+}
+
+.ctxt{
+    margin: 2rem;
+}
+
+.accordion {
+    border: 1px groove #716f69;
+    background-color: aqua;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.5rem;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  .accordion:after {
+    content: '\002B';
+    font-size: 2rem;
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+    font-size: 2rem;
+  }
+  
+  .panel {
+    padding: 0 10px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  .panel p{
+    padding: 1rem;
+  }

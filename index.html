@@ -16,7 +16,7 @@
         
         <header>
             <div>
-                <img class="whitelogo" src="Photos/white logo.png" alt="">
+                <a href="index.html"><img class="whitelogo" src="Photos/white logo.png" alt=""></a>
             </div>
             <div class="navlinks">
                 <a href="index.html"><li>Home</li></a>
@@ -63,16 +63,17 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide"><img class="ver" src="Photos/slide1.jpg" alt=""></div>
               <div class="swiper-slide"><img class="hor" src="Photos/slide2.jpg" alt=""></div>
-              <div class="swiper-slide"><img class="ver" src="Photos/slide3.jpg" alt=""></div>
-              <div class="swiper-slide"><img class="hor" src="Photos/slide4.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="ver" src="Photos/slide 3.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="hor" src="Photos/slide 4.jpg" alt=""></div>
               <div class="swiper-slide"><img class="ver" src="Photos/slide5.jpg" alt=""></div>
-              <div class="swiper-slide"><img class="hor" src="Photos/slide6.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="hor" src="Photos/slide 6.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="ver" src="Photos/slide7.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="hor" src="Photos/slide.jpg" alt=""></div>
+
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
-            <div class="line-slider">
-                <div class="swiper-scrollbar"></div>
-            </div>
+            <div class="swiper-pagination"></div>
         </div>
     </div>
     <br>
@@ -81,15 +82,15 @@
         <h1 data-aos="fade-left" data-aos-duration="600">Accommodations</h1>
         <div class="house" data-aos-delay="2000">
             <div class="shalu" data-aos="zoom-in" data-aos-duration="1000" >
-                <img src="Photos/shalu.jpg" alt="Avatar" class="image" style="width:100%">
+                <img src="Photos/accommodations.jpg" alt="Avatar" class="image">
                 <div class="middle">
                   <div class="text">Shalu House</div>
                 </div>
             </div>
             <div class="shalu" data-aos-delay="200" data-aos-duration="1000" data-aos="zoom-in">
-                <img src="Photos/yamuna.jpg" alt="Avatar" class="image" style="width:100%">
+                <img src="Photos/mud house.jpg" alt="Avatar" class="image">
                 <div class="middle">
-                  <div class="text">Yamuna House</div>
+                  <div class="text">Mud House</div>
                 </div>
             </div>
         </div>
@@ -98,9 +99,10 @@
 
 
     <h1 data-aos="fade-right" data-aos-duration="700">Experiences</h1>
+    
     <div class="experiences" data-aos-delay="1000">
         <div class="fish" data-aos="zoom-in" data-aos-duration="600">
-            <img class="exp" src="Photos/Bullock-cart.jpg" alt="">
+            <img class="exp" src="Photos/bullock.jpg" alt="">
             <div class="middle">
                 <div class="text">Bullock Cart Ride</div>
             </div>
@@ -118,7 +120,15 @@
             </div>
         </div>
     </div>
-    <p class="link" data-aos="zoom-in"><a href="">View all Experiences</a></p>
+    <p class="link" data-aos="zoom-in"><a href="experiences.html">View all Experiences</a></p>
+
+    <!-- <div class="reviews">
+        <h1 data-aos="fade-right" data-aos-duration="700">Reviews</h1>
+        <div class="reviewslider">
+            
+        </div>
+    </div> -->
+
 
     <footer>
         <div class="uppercontent">
@@ -156,7 +166,7 @@
                     <li>Downlaod E-Brochure</li>
                     <li><a href="faqs.html">FAQs</a></li>
                     <li><a href="#reviews"></a></li>
-                    <li><a href="t&c.html">Terms & Conditions</a></li>
+                    <!-- <li><a href="t&c.html">Terms & Conditions</a></li> -->
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
@@ -203,10 +213,6 @@
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
-  },
-  scrollbar: {
-    el: ".swiper-scrollbar",
-    hide: true,
   },
   breakpoints: {
     // when window width is <= 991px
