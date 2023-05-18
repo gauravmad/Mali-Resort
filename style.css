@@ -5,7 +5,9 @@
     padding: 0;
     font-family: 'Raleway', sans-serif;
 }
-
+:root{
+    --swiper-theme-color: rgba(0, 0, 0, 0.831);
+}
 body{
     overflow-x: hidden;
     background-color: #f6ffde;
@@ -419,13 +421,8 @@ footer .copyright i{
     
 }
 
-/* Reviews */
-/* div.reviews{
-    margin-top: 2.5rem;
-} */
-
 .swiper-pagination-bullet{
-    width: 45px;
+    width: 60px;
     height: 2px;
     border-radius: 2px ;
     color: #716f69;
@@ -439,12 +436,8 @@ footer .copyright i{
 
 @media (max-width:992px) {
 
-    .swiper-pagination{
-        width: 40vw;
-    }
-
     .swiper-pagination-bullet{
-        width: 45px;
+        width: 24px;
         height: 2px;
         border-radius: 2px ;
         color: #716f69;
@@ -694,6 +687,17 @@ h1{
         width: 80vw;
         margin: auto;
     }
+    .shalu .image{
+        width: 90vw;
+        margin: auto;
+        object-fit: cover;
+        margin-left: -0.5rem;
+        opacity: 1;
+        display: block;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+    
     h3{
         font-size: 1.4rem;
         font-weight: 300;
