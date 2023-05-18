@@ -1102,6 +1102,9 @@ div.map iframe{
 .more p{
     font-size: 1.2rem;
 }
+.more1 p{
+    font-size: 1.2rem;
+}
 
 @media (max-width:992px) {
     .more p{
@@ -1158,14 +1161,23 @@ div.map iframe{
     margin-top: 4rem;
 }
 
+@media (max-width:992px) {
+    .faq{
+        width: 90vw;
+        margin: auto;
+        margin-top: 2rem;
+    }
+    
+}
+
 .ctxt{
     margin: 2rem;
 }
 
 .accordion {
     border: 1px groove #716f69;
-    background-color: aqua;
-    color: #444;
+    background-color: #c9d6ac;
+    color: black;
     cursor: pointer;
     padding: 18px;
     width: 100%;
