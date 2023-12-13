@@ -9,6 +9,7 @@
     --swiper-theme-color: rgba(0, 0, 0, 0.831);
 }
 body{
+    /* width: 100vw; */
     overflow-x: hidden;
     background-color: #f6ffde;
 }
@@ -69,15 +70,29 @@ h2{
   
 /* Whats App code */
 .whatsappIcon{
-    bottom: 3rem;
-    right: 3rem;
-    z-index: 100;
+    bottom: 4rem;
+    right: 4rem;
+    z-index: 9999;
     position: fixed;
 }
 .whatsapp {
-    width: 4rem;
-    height: 4rem;
+    width: 3.5rem;
+    height: 3.5rem;
     animation: scale 1s infinite alternate;
+}
+
+@media (max-width:768px) {
+    .whatsappIcon{
+        bottom: 4vh;
+        right: 5.5vh;
+        z-index: 99999;
+        position: fixed;
+    }
+    .whatsapp {
+        width: 5vh;
+        height: 5vh;
+        animation: scale 1s infinite alternate;
+    }
 }
 
 @keyframes scale {
@@ -112,6 +127,7 @@ header{
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
+    overflow-x: hidden;
 }
 
 .whitelogo{
@@ -175,6 +191,7 @@ video{
     width: 100%;
     height: 100vh;
     object-fit: cover;
+    overflow-x: hidden;
     top: 0;
     left: 0;
 }
@@ -189,11 +206,13 @@ video{
     position: relative;
     z-index: 10;
     width: 70vw;
+    overflow-x: hidden;
 
 }
 
+
 .explore{
-    width: 8rem;
+    width: fit-content;
     height: 3rem;
     font-size: 1.5rem;
     margin-top: 1.5rem;
@@ -203,10 +222,11 @@ video{
     background-color: white;
     border: none;
     cursor: pointer;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.568);
 }
 
 .explore:hover{
-    width: 9rem;
+    width: fit-content;
     height: 3rem;
     transition: 0.5s ease-in-out;
 }
