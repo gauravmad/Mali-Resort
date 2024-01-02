@@ -396,10 +396,16 @@ footer .medialinks i{
     color: rgb(63, 63, 63);
 }
 
-
+footer .copyright{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
 footer .copyright p{
     text-align: center;
     font-size: 1rem;
+    font-style: normal;
     font-weight: 400;
     padding-bottom: 1.3rem;
 }
@@ -411,7 +417,8 @@ footer .copyright h6{
 }
 
 footer .copyright i{
-    color: rgb(115, 0, 255);
+    color: rgb(72, 72, 72);
+    margin-left: 0.6vh;
 }
 
 
@@ -448,6 +455,9 @@ footer .copyright i{
         margin-top: 0rem;
         font-size: 1rem;
         border: none;
+    }
+    footer .copyright{
+        display: block;
     }
     footer .copyright p{
         text-align: center;
